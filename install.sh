@@ -46,7 +46,7 @@ fi
 
 echo "Flashing Armbian to '$dev' ..."
 
-dd bs=1MB if=$armbian/$armbian.img of=/dev/$dev status=progress
+dd bs=1MB if=armbian/${armbian}.img of=/dev/$dev status=progress
 sync
 
 echo Resize ${dev}1 partition
