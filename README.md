@@ -29,5 +29,5 @@ To create a bootable MicroSD card with CentOS 7 simply run:
 bash install.sh
 ```
 
-The whole process should take about 5 minutes or so.
+The whole process takes about 5 minutes or so.
 
