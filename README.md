@@ -29,5 +29,10 @@ To create a bootable MicroSD card with CentOS 7 simply run:
 bash install.sh
 ```
 
-The whole process takes about 5 minutes or so.
+The whole process takes about 5 minutes or so. After is completes, boot using the new card and login with root/centos and finish the install using
 
+```
+bash /root/finish-centos-install.sh
+```
+
+This will amoung other things prompt you to change the root password.
