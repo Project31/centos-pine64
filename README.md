@@ -9,9 +9,9 @@ Running Linux distribution with MicroSD card inserted
 You can use any one of the releases attached to this project and directly flash them onto the MicroSD
 card using the nice Etcher GUI tool, or if you feel more adventures you can use the `dd` tool. Make sure you use the correct device name for the MicroSD card or you can loose all the data on the device.
 
-...
+```
 dd bs=1MB if=<release.img> of=/dev/<device_name>
-...
+```
 
 ## Create my own distribution from the Armbian and CentOS sources
 The install.sh uses an Armbian release that was copied from
@@ -25,9 +25,9 @@ http://vault.centos.org/altarch/7.4.1708/isos/aarch64/
 The Armbian distribution was decompressed before committing to git so that that the image can referenced.
 To create a bootable MicroSD card with CentOS 7 simply run:
 
-...
+```
 bash install.sh
-...
+```
 
 The whole process should take about 5 minutes or so.
 
