@@ -13,7 +13,7 @@ card using the nice Etcher GUI tool, or if you feel more adventures you can use 
 dd bs=1MB if=<release.img> of=/dev/<device_name>
 ```
 
-## Create my own distribution from the Armbian and CentOS sources
+## Create your own distribution from the Armbian and CentOS sources
 The install.sh uses an [Armbian](https://www.armbian.com/pine64/) release that was copied from
 
 https://dl.armbian.com/pine64/nightly/
