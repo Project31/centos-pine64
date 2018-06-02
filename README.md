@@ -36,3 +36,5 @@ bash /root/finish-centos-install.sh
 ```
 
 This will amoung other things prompt you to change the root password.
+
+![GNOME on Pine64](IMG_9081.jpeg)
