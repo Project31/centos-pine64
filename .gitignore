@@ -1,3 +1,6 @@
 armbian/*
+!armbian/.keepme
 centos/*
+!centos/.keepme
 rootfs/*
+!rootfs/.keepme
