@@ -25,7 +25,7 @@ if mount | grep /dev/${dev}1 > /dev/null; then
    umount /dev/${dev}1
 fi
 
-armbian=Armbian_5.44.180514_Pine64_Debian_stretch_next_4.14.40
+armbian=Armbian_5.67_Rockpro64_Ubuntu_bionic_default_4.4.166_desktop
 centos=CentOS-7-aarch64-rootfs-7.4.1708.tar.xz
 micro_sd_size=7500
 gitdir=`pwd`
@@ -33,7 +33,7 @@ gitdir=`pwd`
 if [ ! -f $gitdir/armbian/${armbian}.img ]; then
   cd $gitdir/armbian
   if [ ! -f $gitdir/armbian/${armbian}.7z ]; then
-    wget https://github.com/Project31/centos-pine64/releases/download/vArmbian.5.44/${armbian}.7z
+    wget https://github.com/Project31/centos-pine64/releases/download/Armbian_5.67_Rockpro64/${armbian}.7z
   fi
   p7zip -d ${armbian}.7z
 fi
@@ -80,7 +80,7 @@ mv $gitdir/rootfs/armbian/lib/firmware $gitdir/rootfs/lib
 rm -fr $gitdir/rootfs/armbian
 
 echo "Adding /etc/fstab"
-echo "UUID=ccdc39df-5dee-41fb-8f85-c68ee54dcd94 / ext4 defaults 0 0" > $gitdir/rootfs/etc/fstab
+echo "UUID=b00195c2-0737-43f7-a1f3-597a48e6343a / ext4 defaults 0 0" > $gitdir/rootfs/etc/fstab
 
 cp $gitdir/finish-centos-install.sh $gitdir/rootfs/root/
 
