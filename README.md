@@ -1,6 +1,6 @@
-# CentOS for Rock64Pro
+# CentOS for Rock64
 ## Summary
-Flashes a MicroSD Card with a Centos RootFS and an Armbian UBoot&amp;Kernel for a Rock64Pro board
+Flashes a MicroSD Card with a Centos RootFS and an Armbian UBoot&amp;Kernel for a Rock64 board
 
 ## Prerequisites
 Running Linux distribution with MicroSD card inserted
@@ -15,11 +15,11 @@ dd bs=1MB if=<release.img> of=/dev/<device_name>
 
 ## Create my own distribution from the Armbian and CentOS sources
 First download and flash a Armbian from https://www.armbian.com/rockpro64. Boot your device from
-this card and using a USB adapter, plugin your blank MicroSD card. The device will show up as /dev/sda. Finally check out the rock64pro branch of the project31/centos-pine64 github project. 
+this card and using a USB adapter, plugin your blank MicroSD card. The device will show up as /dev/sda. Finally check out the rock64 branch of the project31/centos-pine64 github project. 
 
-The install.sh uses an [Armbian](https://www.armbian.com/rockpro64/) release that was copied from
+The install.sh uses an [Armbian](https://www.armbian.com/rock64/) release that was copied from
 
-https://dl.armbian.com/rockpro64/nightly/
+https://dl.armbian.com/rock64/nightly/
 
 and a Centos 7 RootFS copied from 
 

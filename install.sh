@@ -25,7 +25,7 @@ if mount | grep /dev/${dev}1 > /dev/null; then
    umount /dev/${dev}1
 fi
 
-armbian=Armbian_5.67_Rockpro64_Ubuntu_bionic_default_4.4.166_desktop
+armbian=Armbian_5.69_Rock64_Ubuntu_bionic_default_4.4.167
 centos=CentOS-7-aarch64-rootfs-7.4.1708.tar.xz
 micro_sd_size=7500
 gitdir=`pwd`
@@ -33,7 +33,7 @@ gitdir=`pwd`
 if [ ! -f $gitdir/armbian/${armbian}.img ]; then
   cd $gitdir/armbian
   if [ ! -f $gitdir/armbian/${armbian}.7z ]; then
-    wget https://github.com/Project31/centos-pine64/releases/download/Armbian.5.67/${armbian}.7z
+    wget https://github.com/Project31/centos-pine64/releases/download/Armbian.5.69/${armbian}.7z
   fi
   p7zip -d ${armbian}.7z
 fi
