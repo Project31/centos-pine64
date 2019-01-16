@@ -59,6 +59,10 @@ sync
 echo "Mounting rootfs filesystem"
 mount /dev/${dev}1 ./rootfs
 
+fstabUUID=`cat /etc/fstab | grep UUID`
+echo "UUID in fstab"
+echo $fstabUUID
+
 echo "Saving Armbian UBoot and Kernel ..."
 mkdir -p $gitdir/rootfs/armbian/lib
 cp -r $gitdir/rootfs/boot $gitdir/rootfs/armbian/
@@ -81,7 +85,7 @@ mv $gitdir/rootfs/armbian/lib/firmware $gitdir/rootfs/lib
 rm -fr $gitdir/rootfs/armbian
 
 echo "Adding /etc/fstab"
-echo "UUID=b00195c2-0737-43f7-a1f3-597a48e6343a / ext4 defaults 0 0" > $gitdir/rootfs/etc/fstab
+echo $fstabUUID > $gitdir/rootfs/etc/fstab
 
 cp $gitdir/finish-centos-install.sh $gitdir/rootfs/root/
 
