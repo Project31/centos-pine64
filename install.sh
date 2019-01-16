@@ -33,7 +33,7 @@ gitdir=`pwd`
 if [ ! -f $gitdir/armbian/${armbian}.img ]; then
   cd $gitdir/armbian
   if [ ! -f $gitdir/armbian/${armbian}.7z ]; then
-    wget https://github.com/Project31/centos-pine64/releases/download/Armbian_5.67_Rockpro64/${armbian}.7z
+    wget https://github.com/Project31/centos-pine64/releases/download/Armbian.5.67/${armbian}.7z
   fi
   p7zip -d ${armbian}.7z
 fi
