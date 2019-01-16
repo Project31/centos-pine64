@@ -33,7 +33,7 @@ gitdir=`pwd`
 if [ ! -f $gitdir/armbian/${armbian}.img ]; then
   cd $gitdir/armbian
   if [ ! -f $gitdir/armbian/${armbian}.7z ]; then
-    wget https://github.com/Project31/centos-pine64/releases/download/Armbian.5.69/${armbian}.7z
+    wget https://github.com/Project31/centos-pine64/releases/download/Armbian.5.69_Rock64/${armbian}.7z
   fi
   p7zip -d ${armbian}.7z
 fi
@@ -44,6 +44,7 @@ if [ ! -f $gitdir/centos/${centos} ]; then
   wget https://github.com/Project31/centos-pine64/releases/download/vCentos7.4.1708/$centos
 fi
 
+cd $gitdir
 echo "Flashing Armbian to '$dev' ..."
 
 dd bs=1MB if=armbian/${armbian}.img of=/dev/$dev status=progress
