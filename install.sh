@@ -90,6 +90,7 @@ echo $fstabUUID > $gitdir/rootfs/etc/fstab
 cp $gitdir/finish-centos-install.sh $gitdir/rootfs/root/
 
 sync
+cd $gitdir
 umount $gitdir/rootfs
 
 echo "Flashing complete!"
